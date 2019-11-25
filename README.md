@@ -27,3 +27,8 @@ Checkout the actual content from the bare repository to your `$HOME`:
 ```bash
 dots checkout
 ```
+
+Set the flag `showUntrackedFiles` to `no` on this specific (local) repository:
+```bash
+dots config --local status.showUntrackedFiles no
+```
