@@ -2,6 +2,8 @@
 
 From [this tutorial](https://www.atlassian.com/git/tutorials/dotfiles).
 
+## Installing Dotfiles on a New System
+
 Prior to the installation make sure you have committed the alias to your `.bashrc` or `.zsh`:
 ```bash
 alias dots='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
@@ -15,7 +17,7 @@ echo ".dots" >> .gitignore
 
 Now, clone your dotfiles into a bare repository in a "dot" folder of your `$HOME`:
 ```bash
-git clone --bare <git-repo-url> $HOME/.dots
+git clone --bare git@github.com:hoshino/dots.git $HOME/.dots
 ```
 
 Define the alias in the current shell scope:
