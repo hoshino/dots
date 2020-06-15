@@ -20,10 +20,15 @@ git clone --bare <git-repo-url> $HOME/.dots
 
 Define the alias in the current shell scope:
 ```bash
-alias config='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
+alias dots='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
 ```
 
 Checkout the actual content from the bare repository to your `$HOME`:
 ```bash
 dots checkout
+```
+
+Set the flag `showUntrackedFiles` to `no` on this specific (local) repository:
+```bash
+dots config --local status.showUntrackedFiles no
 ```
