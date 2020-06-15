@@ -102,7 +102,7 @@ source $ZSH/oh-my-zsh.sh
 alias ~="cd ~"
 alias mono="cd ~/Workspace/mono"
 alias notes="cd ~/Workspace/notes"
-alias bpager="cd ~/Workspace/mono/bpager"
+alias bpager="cd ~/Workspace/mono/bf_bpage_ui"
 alias feedpager="cd ~/Workspace/mono/feedpager"
 alias news_bpager="cd ~/Workspace/mono/news_bpager"
 alias news_feedpager="cd ~/Workspace/mono/news_feedpager"
@@ -112,6 +112,3 @@ alias bf_ads="cd ~/Workspace/mono/packages/python/bf_ads"
 alias dots='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
 
 export PATH="$HOME/.npm-global/bin:$PATH"
-
-# ctags
-set tags=tags
